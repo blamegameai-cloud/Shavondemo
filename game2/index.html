@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Reveal Puzzle</title>
+    <script src="https://code.createjs.com/1.0.0/soundjs.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/gamestyle.css">
+</head>
+<body onload="init()">
+    <div class="game-container">
+        <div class="game-header">
+        <div id="scoreDisplay" class="player-container">Score: 0</div>
+        <div class="player-container">
+        <button id="playBtn">Play Music</button>
+       
+            
+        </div>
+        </div>           
+       
+        <!-- Removed movesDisplay -->
+        
+        <canvas id="gameCanvas"></canvas>
+
+        <div id="gameOverOverlay" class="message-overlay">
+            <h2 id="gameOverTitle">SO CLOSE!</h2>
+            <p id="gameOverScore">Your final score: 0</p>
+            <button onclick="initGame()">Play Again</button>
+        </div>
+
+        <div id="congratulationsOverlay" class="message-overlay">
+            <h2 id="congratulationsTitle">GOOD JOB!</h2>
+            <p id="congratulationsMessage">YOU WON!</p>
+            <p id="congratulationsScore">Your score: 0</p>
+            <button onclick="initGame()">Play Again</button>
+        </div>
+     </div>
+    <script src="js/gamer.js"></script>
+     <!-- Include Howler.js from a CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+  <!-- Your custom script -->
+  <script src="js/soundz.js"></script>
+
+           
+</body>
+</html>
+       
